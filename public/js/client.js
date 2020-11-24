@@ -19,6 +19,7 @@ weatherForm.addEventListener('submit', (e) => {
     console.log(location)
     messageOne.textContent = 'Loading message...'
     messageTwo.textContent = ''
+    
     //invoke the weather api
     fetch('/weather?address='+ location).then((response) => {
         response.json().then(
